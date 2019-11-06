@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# Initial commit
 import argparse
 
 def find_max_profit(prices):
