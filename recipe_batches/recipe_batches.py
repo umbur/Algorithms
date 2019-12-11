@@ -2,27 +2,11 @@
 
 import math
 
-# def recipe_batches(recipe, ingredients):
-#   max_number = 0
-#   limit = None
-#   for key, value in recipe.items():
-#     if key in ingredients:
-#       number = ingredients[key] // recipe[key]
-#       print(number)
-#     else:
-#       max_number= 0
-#       break
-#     if limit == None:
-#       max_number = number
-#       limit = max_number
-#     else:
-#       if number < limit:
-#         limit = number
-
-
-#   return max_number
 def recipe_batches(recipe, ingredients):
+    # Defined a list to track number of batches
     batches = []
+    # Looping through recipe and ingredients lists to find identical keys 
+    # and then divide them to each other and return min value of the result(batches)
     for ingredient in recipe:
         if ingredient in ingredients:
             amount = ingredients[ingredient] // recipe[ingredient]
@@ -30,6 +14,7 @@ def recipe_batches(recipe, ingredients):
                 return 0
             else:
                 batches.append(math.floor(amount))
+                print(batches)
         else:
             return 0
     return min(batches)
