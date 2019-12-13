@@ -3,7 +3,10 @@
 import sys
 
 def making_change(amount, denominations):
-  pass 
+  # defined x which is a possible values the amount should be calculated 
+  x = [1, 5, 10, 25]
+  # if amount(10) is equal or less than the most biggest x then do the following:
+  # 
 
 
 if __name__ == "__main__":
